@@ -8,7 +8,7 @@ body ul {
   padding: 0;
   overflow: hidden;
   background-color: #20f9ff;
-  box-shadow: 1px 1px 2.5px 1px #000;
+  box-shadow: 0.5px 0.5px 1px 0.5px #000;
 }
 
 li {
