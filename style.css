@@ -1,0 +1,40 @@
+body {
+  background-color: rgba(249, 249, 249, 0.93);
+}
+
+body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #20f9ff;
+  box-shadow: 1px 1px 2.5px 1px #000;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Open Sans";
+  color: #20f9ff;
+  text-shadow: 0px 0px 0.25px #000000, 2px 2px 5px #000;
+}
+body p {
+  text-align: center;
+}
