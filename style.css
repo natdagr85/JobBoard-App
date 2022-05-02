@@ -1,5 +1,6 @@
 body {
   background-color: rgba(249, 249, 249, 0.93);
+  margin: 0;
 }
 
 body ul {
@@ -9,6 +10,7 @@ body ul {
   overflow: hidden;
   background-color: #20f9ff;
   box-shadow: 0.5px 0.5px 1px 0.5px #000;
+  border-radius: 5px;
 }
 
 li {
@@ -22,10 +24,11 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  width: 50px;
 }
 
 li a:hover {
-  background-color: grey;
+  background-color: #bdfeff;
 }
 
 .title {
