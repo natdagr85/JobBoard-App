@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(249, 249, 249, 0.93);
+  background-color: #f4f4f4;
   margin: 0;
 }
 
@@ -9,7 +9,7 @@ body ul {
   padding: 0;
   overflow: hidden;
   background-color: #20f9ff;
-  box-shadow: 0.5px 0.5px 1px 0.5px #000;
+  box-shadow: 0.5px 0px 0px 0.5px #0096ff;
   border-radius: 5px;
 }
 
@@ -25,6 +25,7 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   width: 50px;
+  border-radius: 5px;
 }
 
 li a:hover {
