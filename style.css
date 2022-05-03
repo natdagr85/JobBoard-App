@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-body ul {
+.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -11,7 +11,10 @@ body ul {
   background-color: #2f3d7e;
 }
 
-li {
+.item1,
+.item2,
+.item3,
+.item4 {
   display: inline;
   float: left;
 }
@@ -32,17 +35,48 @@ li a:hover {
 
 .title {
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: bold;
   font-family: "Oleo Script";
   color: #2f3d7e;
-  text-shadow: 0px 0px 0px #000000, 0.5px 0.5px 1px #000;
+  text-shadow: 3px 3px 3px grey, 0.5px 0.5px 1px #000;
   margin-bottom: 40px;
 }
 body p {
   text-align: center;
 }
 
+.tableheader {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  width: 500px;
+  border: 2px solid black;
+}
+.tablecontent {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid black;
+  width: 500px;
+  height: 300px;
+  border-top: 0px;
+}
+
+.header,
+.box {
+  display: inline;
+  float: center;
+}
+
+.header,
+.box {
+  margin-left: 48%;
+}
+
+/*
 table,
 th,
 td {
@@ -61,3 +95,4 @@ td {
   text-align: center;
   width: 250px;
 }
+*/
