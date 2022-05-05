@@ -40,7 +40,7 @@ li a:hover {
   font-weight: bold;
   font-family: "Oleo Script";
   color: #2f3d7e;
-  text-shadow: 3px 3px 3px grey, 0.5px 0.5px 1px #000;
+  text-shadow: 2px 2px 2px grey, 0.5px 0.5px 1px #000;
   margin-bottom: 40px;
 }
 
@@ -56,7 +56,10 @@ body p {
   overflow: hidden;
   width: 500px;
   border: 5px solid #2f3d7e;
-  color: #2f3d7e;
+  background-color: #2f3d7e;
+  color: #faeaec;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .tablecontent {
@@ -70,6 +73,8 @@ body p {
   height: 300px;
   border-top: 0px;
   color: #2f3d7e;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .header,
