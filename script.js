@@ -1,11 +1,13 @@
 let beforeload = new Date().getTime();
-let beforeload2 = new Date().getTime();
+//let beforeload2 = new Date().getTime();
 
 $.ajax({
   url: "https://random-words-api.vercel.app/word",
   method: "GET",
   success: function (result) {
-    document.querySelector("#word").textContent = result[0].word;
+    document.querySelector(
+      "#word"
+    ).textContent = `Random Word: ${result[0].word}`;
     let afterload = new Date().getTime();
     seconds = (afterload - beforeload) / 1000;
     document.querySelector("#load_time").textContent =
@@ -25,11 +27,24 @@ $.ajax({
   url: "https://excuser.herokuapp.com/v1/excuse",
   method: "GET",
   success: function (result) {
-    console.log(result[0].excuse);
     document.querySelector("#excuse").textContent = result[0].excuse;
-    let afterload2 = new Date().getTime();
-    seconds = (afterload2 - beforeload2) / 1000;
+    let afterload = new Date().getTime();
+    seconds = (afterload - beforeload) / 1000;
     document.querySelector("#load_time2").textContent =
+      "Loaded in  " + seconds + " sec(s).";
+  },
+});
+
+$.ajax({
+  url: "https://random-data-api.com/api/coffee/random_coffee",
+  method: "GET",
+  success: function (result) {
+    document.querySelector(
+      "#coffee"
+    ).textContent = `Today's Coffee Of The Day is ${result.blend_name} and it has notes of ${result.notes}.`;
+    let afterload = new Date().getTime();
+    seconds = (afterload - beforeload) / 1000;
+    document.querySelector("#load_time3").textContent =
       "Loaded in  " + seconds + " sec(s).";
   },
 });
