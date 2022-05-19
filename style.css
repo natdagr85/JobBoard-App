@@ -78,12 +78,14 @@ body p {
 }
 
 .header,
-.box {
-  display: inline;
-  float: center;
+.box,
+.timer,
+.excuse,
+.load_time2 {
+  text-align: center;
 }
 
-.header,
-.box {
-  margin-left: 48%;
+.box,
+.excuse {
+  margin-top: 5%;
 }
