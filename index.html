@@ -14,28 +14,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./script.js"></script>
     <title>Job Board App</title>
   </head>
   <body>
     <ul class="nav">
-      <li class="item1"><a href="index.html">Home</a></li>
-      <li class="item2"><a href="http://placekitten.com/500/300">Text</a></li>
-      <li class="item3"><a href="http://placekitten.com/600/300">Text</a></li>
-      <li class="item4"><a href="http://placekitten.com/400/300">Text</a></li>
+      <button class="item1">USA Jobs</button>
+      <button class="item2">The Muse</button>
+      <button class="item3">Reset</button>
     </ul>
     <p class="title">Job Board App</p>
-    <p style="color: #2f3d7e; font-family: 'Open Sans'">Welcome To The Board</p>
+    <p style="color: #2f3d7e; font-family: 'Open Sans'">
+      Select Different Servers Above
+    </p>
+    <div>
+      <input type="search" id="site-search" name="q" />
+      <button id="search-btn">Search</button>
+      <input type="checkbox" id="checkbox" value="Entry Level">Entry Level</input>
+    </div>
     <ul class="tableheader">
-      <li class="header">text</li>
+      <li class="header" id="header">Available Jobs</li>
     </ul>
     <ul class="tablecontent">
-      <li class="box" id="word"></li>
-      <li class="timer" id="load_time"></li>
-      <li class="excuse" id="excuse"></li>
-      <li class="load_time2" id="load_time2"></li>
-      <li class="coffee" id="coffee"></li>
-      <li class="load_time3" id="load_time3"></li>
+      <li class="usa hidden" id="usa"></li>
+      <li class="muse hidden" id="muse"></li>
     </ul>
+    <script src="./script.js"></script>
   </body>
 </html>

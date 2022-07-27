@@ -9,39 +9,59 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #2f3d7e;
+  height: 50px;
+  position: fixed;
+  width: 100%;
 }
 
 .item1,
 .item2,
-.item3,
-.item4 {
+.item3 {
   display: inline;
   float: left;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
+}
+
+.item1,
+.item2,
+.item3 {
+  background-color: #2f3d7e;
+  color: #faeaec;
+  height: auto;
+  width: auto;
+  height: 50px;
+  width: 100px;
+  font-size: 16px;
+  border: 0;
+}
+
+.item1:hover,
+.item2:hover,
+.item3:hover {
+  background-color: #faeaec;
+  color: #2f3d7e;
+  cursor: pointer;
 }
 
 li a {
-  display: block;
-  color: #faeaec;
+  color: #2f3d7e;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  padding: 0;
   width: 50px;
-}
-
-li a:hover {
-  background-color: #faeaec;
-  color: #2f3d7e;
 }
 
 .title {
   text-align: center;
   font-size: 70px;
   font-weight: bold;
-  font-family: "Oleo Script";
+  font-family: 'Oleo Script';
   color: #2f3d7e;
   text-shadow: 2px 2px 2px grey, 0.5px 0.5px 1px #000;
   margin-bottom: 40px;
+  margin-top: 0;
+  padding-top: 10%;
 }
 
 body p {
@@ -49,12 +69,12 @@ body p {
 }
 
 .tableheader {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   list-style-type: none;
   margin: auto;
   padding: 0;
   overflow: hidden;
-  width: 500px;
+  width: 75%;
   border: 5px solid #2f3d7e;
   background-color: #2f3d7e;
   color: #faeaec;
@@ -63,32 +83,54 @@ body p {
 }
 
 .tablecontent {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   list-style-type: none;
   margin: auto;
   padding: 0;
   overflow: hidden;
   border: 5px solid #2f3d7e;
-  width: 500px;
-  height: 350px;
+  width: 75%;
+  height: auto;
   border-top: 0px;
   color: #2f3d7e;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.header,
-.box,
-.timer,
-.excuse,
-.load_time2,
-.coffee,
-.load_time3 {
+.header {
   text-align: center;
 }
 
-.box,
-.excuse,
-.coffee {
-  margin-top: 5%;
+.usa,
+.muse {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.usa,
+.muse {
+  margin-top: 2.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+#site-search {
+  height: 30px;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+#search-btn {
+  height: 30px;
+  background-color: #2f3d7e;
+  border: 0;
+  border-radius: 5%;
+  color: #faeaec;
 }
